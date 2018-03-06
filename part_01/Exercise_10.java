@@ -9,5 +9,20 @@ package part_01;
  */
 
 public class Exercise_10 {
+    public static void main(String[] args) {
+        double distKm = 12;
+        double timeMins = 30.5;
+
+        double speedMPH;
+        double distMiles = distKm *1.6;
+        double timeHours = timeMins/60.0;
+
+        speedMPH = distMiles / timeHours;
+
+        System.out.println("The speed in MPH is: " + speedMPH);
+    }
+
+
+
 
 }
