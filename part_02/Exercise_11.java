@@ -19,6 +19,26 @@ import java.util.Scanner;
 
 public class Exercise_11 {
 
+    public static void main(String[] args) {
+        System.out.println("Enter an investment amount");
+        Scanner investScanner = new Scanner(System.in);
+        double investment = investScanner.nextDouble();
+
+        System.out.println("Enter an investment rate in decimal format (10% would be input as .1");
+        Scanner rateScanner = new Scanner(System.in);
+        double rate = rateScanner.nextDouble();
+
+        System.out.println("Enter the number of years to invest (whole years)");
+        Scanner yearsScanner = new Scanner(System.in);
+        int years = yearsScanner.nextInt();
+
+        for(int i = 0; i<=years;i++){
+
+            investment = investment * (1 + rate);
+            System.out.println(investment);
+        }
+    }
+
 }
 
 

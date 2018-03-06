@@ -1,5 +1,7 @@
 package part_02;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 /**
@@ -15,6 +17,22 @@ import java.util.Scanner;
  */
 
 public class Exercise_01 {
+    public static void main(String[] args) {
+
+        System.out.println("Enter a temperature in Celsius");
+        Scanner scanner = new Scanner(System.in);
+        double celsius = scanner.nextDouble();
+
+        double fahrenheitTimes100 = (1.8 * celsius +32)*100;
+        double fahrenheit = Math.round(fahrenheitTimes100)/100.0;
+
+        System.out.println(celsius + " degrees celsius = " + fahrenheit + " degrees fahrenheit");
+
+
+    }
+
+
+
 
 
 }

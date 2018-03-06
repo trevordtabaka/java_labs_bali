@@ -9,6 +9,16 @@ package part_02;
  */
 public class Exercise_09 {
 
+    public static void main(String[] args) {
+
+        for(char c = 'z'; c >= 'a'; c--){
+
+            System.out.println(c);
+
+        }
+
+    }
+
 }
 
 
