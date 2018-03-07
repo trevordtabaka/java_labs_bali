@@ -1,4 +1,4 @@
-package part_03;
+package part_03.exercise_01;
 
 /**
   Write 3 classes. These classes can reside in the same file for ease and clarity.
