@@ -22,7 +22,6 @@ class Exercise_06 {
         long totalSeconds = System.currentTimeMillis()/1000;
         // Get the current second within the minute within the hour
         long currentSecond = totalSeconds%60;
-        System.out.println(currentSecond);
         // Get total minutes
         long totalMinutes = totalSeconds/60;
         // Get the current minute in the hour
