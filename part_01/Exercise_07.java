@@ -18,7 +18,7 @@ public class Exercise_07 {
         boolean plusFlag=true;
 
 
-        for(double i=1; i<=1001; i+=2){
+        for(double i=1; i<=1000000001; i+=2){
 
             if(plusFlag){
                 num += (1.0/i);

@@ -14,7 +14,7 @@ public class Exercise_10 {
         double timeMins = 30.5;
 
         double speedMPH;
-        double distMiles = distKm *1.6;
+        double distMiles = distKm / 1.6;
         double timeHours = timeMins/60.0;
 
         speedMPH = distMiles / timeHours;
