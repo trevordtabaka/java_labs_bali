@@ -14,5 +14,12 @@ public class Exercise_05 {
 
     public static void main(String[] strings) {
 
+        int[] myArray = {8, 4, 13, -43, 98, 2,43,467676,9};
+
+        for(int num:myArray){
+
+            System.out.println(num);
+        }
+
     }
 }
