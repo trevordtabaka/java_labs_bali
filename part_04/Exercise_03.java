@@ -16,5 +16,19 @@ public class Exercise_03 {
 
     public static void main(String[] strings) {
 
+        int[][] myArray = new int[5][10];
+        int count=0;
+        for(int i =0; i<5; i++) {
+
+            for (int j = 0; j < 10; j++) {
+                myArray[i][j] = count;
+                System.out.print(count + " ");
+                if(j != 9){
+                    count++;
+                }
+            }
+            System.out.println("");
+            count++;
+        }
     }
 }
