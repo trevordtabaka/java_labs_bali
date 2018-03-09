@@ -1,4 +1,4 @@
-package part_05;
+package part_05.Exercise_01;
 
 import java.util.ArrayList;
 
@@ -9,4 +9,29 @@ import java.util.ArrayList;
  * the private variables within Class_03. Please note, do not use the constructor of any of these classes to set the
  * private instance variables. Use System.out.println at various points to demonstrate the flow of execution and
  * the varying state of each private variable. You may name these classes whatever you like.
+ */
+
+
+/**
+ * program output
+ *
+ Making class 2
+ class2 constructed
+ getting and setting class2 variables
+ true
+ false
+ 0
+ 10
+ null
+ class2String
+ Class2 adding class3
+ Making class 3
+ class3 constructed
+ getting and setting class3 variables
+ true
+ false
+ 0
+ 3
+ null
+ class3String
  */
