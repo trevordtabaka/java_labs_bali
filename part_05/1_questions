@@ -1,58 +1,104 @@
 Answer the following:
 
 1) What are the access control modifiers (acm) provided in Java?
+pub lic private protected and (default)
 
 2) Briefly explain each acm and how they differentiate from each other?
+public makes the member available to any other code.
+Default is similar to public but will restrict the availability to any code in the package it is contained in
+Private means that only the class object members themselves can access
+protected is like default but also can be accessed by subclasses in other packages
 
 3) Why do we use acm's?
+To control the access to certain code blocks. Essence of encapsulation.
 
 4) What is the risk of not using acm's?
+you will allow other code to potentially change your logic and create errors and hard to manage programs.
 
 5) Write a method signature that receives an object of type "Car" as a parameter.
+public void carMethod(Car myCar){
+
+        }
 
 6) Write a method signature that returns an object of type "Car".
+        public Car carMethod(){
+            Car myCar = new Car();
+            return myCar;
+        }
 
 7) What is a very important consideration to keep in mind when passing objects (hint: by reference) from one
 method to another?
+When you change something to the new reference both references will be affected because the information in memory is shared bewtween the two.
+Not two different copies.
 
 8) What is method overloading?
+Making more than one signiture for the same method name.
 
 9) Why is method overloading useful? (Hint: as compared to the implementation in the C language.)
+You can give flexibility to what parameters are passed in depending on the situation
 
 10) How do you overload a method? What signifies that a method is being overloaded?
+more than one method with the same name but the signature is different
 
 11) Below, by writing just the method signature, demonstrate overloading a method 3 times.
+Car(Engine e)
+Car(Engine e, GasTank gt)
+Car(Wheels w)
 
 12) How do you overload a constructor? What signifies that a constructor is being overloaded?
+The same as overloading any other method
+
 
 13) Why do we overload constructors?
+sometimes it can make your program more efficient. You can have an object initialize another
 
 14) Below, by writing just the constructor signature, demonstrate overloading a constructor 3 times.
+Truck(DieselEngine diesel Wheels w)
+Truck(UnleadedEngine unleaded Wheels w)
+Truck(DieselEngine diesel)
+Truck(UnleadedEngine unleaded)
+
+
 
 15) What is recursion?
+When a method calls itself in its body
 
 16) What important considerations must you keep in mind when using recursion?
+It can cause stack overruns if the number of recursions gets to large due to all the memory that has to be allocated
 
 17) How do you make a method recursive?
+Have it call itself
 
 18) How do you escape a recursive method?
+You need to have an escape condition that will get executed
 
 19) Explain what "static" is all about?
+static variables mean that all objects of a given class share the same variable that is declared as staic. They do not get their own copy.
+static methods can be called without an instance being created of the class of which the method belongs
 
 20) When should you use "static"?
+if you want to count the number of objects of a class that have been created, or want to use a method of a class without having to create an instance of its class
 
 21) What differentiates static variables from instance variables?
+instance variables are a unique variable to that object. static variables and their values are shared by all instances of that class
 
 22) What is a the quicksort? Briefly describe how the quicksort works.
+a good general purpose sorting algorithm. You separate an array into to partitions and then again and again until it is sorted
 
 23) What is a nested, or inner, class?
+A class that is defined inside another class
 
 24) What is the scope of a nested class?
+it is bounded to the class it is contained in and therefore a member of that class
 
 25) What is a variable-arity method?
+one that takes in a variable amount of parameters
 
 26) What makes a variable-arity method unique? When should you use it?
+the parameter list is not a set size
 
 27) What is the shorthand name for variable-arity?
+varargs method
 
 28) Why important considerations must you keep in mind when using variable-arity methods? (hint: ambiguity)
+you have to be careful when overloading, errors can occur if the call doesnt contain any arguments.
