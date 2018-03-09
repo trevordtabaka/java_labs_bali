@@ -7,3 +7,23 @@ package part_05;
  * out "Hello Recursion!" 10 times.
  *
  */
+class Exercise_05{
+
+    public static void main(String[] args) {
+
+        Exercise_05 obj = new Exercise_05();
+        obj.recursion(10);
+    }
+
+    public void recursion(int i) {
+
+        if(i==0){
+            return ;
+        }
+
+        recursion(i-1);
+
+        System.out.println(i + " " + "\"Hello Recursion!\"");
+
+    }
+}
