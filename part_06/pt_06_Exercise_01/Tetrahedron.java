@@ -5,9 +5,7 @@ public class Tetrahedron extends PlatonicSolid {
 
     public Tetrahedron() {
 
-        super.setElement("fire");
-        super.setNumberOfFaces(4);
-        super.setBaseShape("triangle");
+
 
     }
 }
