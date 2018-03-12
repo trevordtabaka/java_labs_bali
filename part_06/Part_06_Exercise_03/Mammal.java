@@ -27,9 +27,14 @@ public class Mammal extends Animal{
         this.hasNeoCortex = hasNeoCortex;
     }
 
-    public void lostEye(int eyes){
+    public void lostEye(){
 
-        super.setEyes(eyes);
+        super.setEyes(getEyes() - 1);
+
+    }
+    public void bald(){
+
+        setHasFurHair(false);
 
     }
 }
