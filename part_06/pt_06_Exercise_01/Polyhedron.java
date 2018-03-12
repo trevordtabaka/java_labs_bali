@@ -6,6 +6,11 @@ public class PlatonicSolid {
     private String element;
     private String baseShape;
 
+    public PlatonicSolid(int numberOfFaces, String element, String baseShape) {
+        this.numberOfFaces = numberOfFaces;
+        this.element = element;
+        this.baseShape = baseShape;
+    }
 
     public int getNumberOfFaces() {
         return numberOfFaces;
