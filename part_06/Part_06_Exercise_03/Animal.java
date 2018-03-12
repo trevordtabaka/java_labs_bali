@@ -25,4 +25,6 @@ public class Animal {
     public void setLimbs(int limbs) {
         this.limbs = this.limbs;
     }
+
+
 }

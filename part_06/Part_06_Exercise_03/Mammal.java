@@ -11,6 +11,11 @@ public class Mammal extends Animal{
         this.hasNeoCortex = true;
     }
 
+    public Mammal(int eyes, int limbs, boolean hasNeoCortex) {
+        super(eyes, limbs);
+        this.hasNeoCortex = hasNeoCortex;
+    }
+
     public boolean isHasFurHair() {
         return hasFurHair;
     }
@@ -37,4 +42,10 @@ public class Mammal extends Animal{
         setHasFurHair(false);
 
     }
+    public void runs(){
+
+        System.out.println("This animal runs");
+
+    }
+
 }

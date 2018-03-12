@@ -22,4 +22,11 @@ public class Dog extends Mammal {
         super.setLimbs(limbs);
 
     }
+
+    public void runs(){
+
+        System.out.println("This dog runs on  " + getLimbs() + " legs");
+
+    }
+
 }
