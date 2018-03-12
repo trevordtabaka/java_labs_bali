@@ -1,12 +1,12 @@
 package part_06.pt_06_Exercise_01;
 
-public class PlatonicSolid {
+public class Polyhedron {
 
     private int numberOfFaces;
     private String element;
     private String baseShape;
 
-    public PlatonicSolid(int numberOfFaces, String element, String baseShape) {
+    public Polyhedron(int numberOfFaces, String element, String baseShape) {
         this.numberOfFaces = numberOfFaces;
         this.element = element;
         this.baseShape = baseShape;

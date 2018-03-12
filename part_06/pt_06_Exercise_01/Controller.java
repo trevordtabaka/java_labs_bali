@@ -9,10 +9,10 @@ public class Controller {
         // set the private variables from Platonic Solid parent
         tetrahedron.setBaseShape("triangle");
         tetrahedron.setNumberOfFaces(4);
-        tetrahedron.setElement(fire);
+        tetrahedron.setElement("fire");
 
         //create a hexahedron object
-        Hexahedron hexahedron = new Hexahedron();
+        Hexahedron hexahedron = new Hexahedron(6,"earth", "quadrilateral");
         // set the private variables from Platonic Solid parent
         hexahedron.setBaseShape("square");
         hexahedron.setElement("earth");
