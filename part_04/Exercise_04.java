@@ -26,14 +26,11 @@ class Exercise_04 {
 
 
     static int getMaxVal(int[][] myArray) {
-        int max = 0;
-        boolean maxIsSet = false;
+        int max = myArray[0][0];
+
         for (int row[] : myArray) {
             for (int val : row) {
-                if (maxIsSet == false) {
-                    max = val;
-                    maxIsSet = true;
-                } else if (val > max) {
+                if (val > max) {
                     max = val;
                 }
 
@@ -45,17 +42,13 @@ class Exercise_04 {
 
     // write a method called getMinVal that takes in a 2D array and iterates through the array to determine the min value in array
     static int getMinVal(int[][] myArray) {
-        int min = 0;
-        boolean minIsSet = false;
+        int min = myArray[0][0];
+
         for (int row[] : myArray) {
             for (int val : row) {
-                if (minIsSet == false) {
-                    min = val;
-                    minIsSet = true;
-                } else if (val < min) {
+                 if (val < min) {
                     min = val;
                 }
-
             }
 
         }
