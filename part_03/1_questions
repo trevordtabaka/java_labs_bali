@@ -9,11 +9,11 @@ They are data members that are apart of classes. Created when an instance of the
 You need to declare and create an instance of it.
 
 3) After creating a new object, how do you set that objects instance variables?
-either by directly setting them: object.variable = val; or with getters and setters
+either by directly setting them: object.variable = val; or with setters
 
 
 4) What is a reference variable? Why do you need to be careful with reference variables?
-It is a variable that is not primitive and points to a space in memory which stores information.
+It is a variable that is not primitive and points to an objects space in memory which stores information.
 You can have more than one reference variable that points to the same space in memory.
 So changing something dealing with that reference variable also changes the information
 about any other reference variable that points to that space in memory
@@ -36,23 +36,23 @@ public int methodName(){
 
 
 9) How do you pass a parameter to a method?
-methodName(paramType paramName);
+methodName(paramName);
 
 
 10) What is the method signature for a method named sum() that takes two int parameters and returns their sum as in int?
 int sum(int a, int b){}
 
 11) What is a constructor?
-The method that is called as soon as an instance of an object is being created. It is named the same as the class name.
+The member that is called as soon as an instance of an object is being created. It is named the same as the class name.
 
 12) How does Java treat a class without a constructor?
 It uses/creates a default constructor
 
 13) What would the constructor for "public class Animal" look like?
-Animal(){}
+public Animal(){}
 
 14) What is the effect of passing parameters to a constructor?
-When you create an object of that class type you must pass a valid value for that parameter
+When you create an object of that class type you must pass a valid value for that parameter. Initializes instance variables
 
 15) When should you pass parameters to a constructor?
 When the signature of the constructor specifies any
@@ -79,6 +79,8 @@ class myClass{
 
 20.) EXplain the difference between static and non-static variables.
 A static variable can be accessed without creating an object of the class that it is contained in
+Static variables are owned by the class not the objects.
 
 21.) Explain the difference between static and non-static methods.
 Static methods can be called without creating an object of its containing class
+
