@@ -14,7 +14,25 @@ Complete the code so that it prints the following lines:
 
 **/
 
-public class Exercise_01 <T> {
+public class Exercise_01 {
+
+    public static void main(String[] args) {
+        Integer[] intArray = {1,2,3};
+        String[] stringArray = {"Hello", "World"};
+
+        printArray(intArray);
+        printArray(stringArray);
+    }
+
+    public static <T> void printArray(T[] someArray){
+
+        for(T element: someArray){
+
+            System.out.println(element);
+
+        }
+
+    }
 
 }
 
