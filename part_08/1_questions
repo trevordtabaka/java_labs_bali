@@ -1,19 +1,53 @@
 1) Describe the exception hierarchy.
+All exceptions are subclasses of Throwable. Exception and Error are the direct subclasses of Throwable.
+Exception class has subclasses of RuntimeException and then the other checked exceptions
 
 2) What is a try/catch statement?
+It is the key words try and catch used together to first try to execute the statements in the try block and
+if it is not successful then it is caught and dealt with by the catch blcok.
 
 3) Why do we use try/catch statements?
+To gracefully handle errors that might arise during the runtime of a program.
+If dealt with properly the program can continue in a more graceful manner.
 
 4) Write a full example of a try/catch/finally statement that catches two distinct exceptions
+        int x;
+        try{
+
+            Scanner scanner = new Scanner(System.In);
+            int c = scanner.nextInt();
+
+            x = 6/0;
+        }catch (ArithmeticException e){
+
+            System.out.println("divide by 0 caught");
+        }catch(InputMismatchException iMisMatch){
+            System.out.println("divide by 0 caught");
+        }
+        finally{sout("print this after regardless");}
 
 5) What does it mean to "throw" an exception? How does it work?
+If the statement is reached it means that a condition in which the program cannot handle in its happy flow
+correctly going forward so it prevents that method from going further and throws and object
 
 6) What happens if your application encounters an exception and you don't catch it or throw it?
+Your program will be ended abruptly
 
 7) When catching exception in an inheritance hierarchy, should you catch the subclass exception or the
 superclass exception first? Why?
+subclass first because the superclass will inherently
+catch the subclass exceptions and therefore would not be relevant to use the subclass after
 
 8) Write a nested try/catch statement.
+try{
+
+    }catch(){
+        try{
+
+        }catch(){
+
+        }
+    }
 
 9) What does it mean to rethrow an exception?
 

@@ -37,8 +37,8 @@ If you know there will be 10 bus trips but you do not know how many passengers w
 12) Demonstrate how to iterate through an array, printing each value, using a for loop.
 
 int[] myArray = new int[10];
-for(int i = 0; i<10; i++){
-    sout(i);
+for(int i = 0; i<myArray.length; i++){
+    sout(myArray[i]);
 }
 
 13) Demonstrate how to iterate through an array, printing each value, using a while loop.
