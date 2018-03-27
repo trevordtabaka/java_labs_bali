@@ -50,11 +50,23 @@ try{
     }
 
 9) What does it mean to rethrow an exception?
+If a method has an exception thrown to it, and it doesnt know how to handle it in a graceful manner,
+ it has the option of rethrowing the exception object back to the method that originally throwing it
 
 10) What are the 7 methods that come with the Throwable class?
+fillInStackTrace()
+getLocalizedMessage()
+getMessage()
+printStackTrace()
+printStackTrace(PrintStream stream)
+printStackTrace(PrintWriter stream)
+toString()
 
 11) What does the "finally" block do?
+After a try catch pairing the finally code block will execute
+regardless of the outcome of the try/catch
 
 12) When is the finally block executed? Will it ever not be executed?
-
+after the try/catch statements
 13) What are the three recently added features to Java exceptions?
+Try-with-resources

@@ -101,4 +101,4 @@ the parameter list is not a set size
 varargs method
 
 28) Why important considerations must you keep in mind when using variable-arity methods? (hint: ambiguity)
-you have to be careful when overloading, errors can occur if the call doesnt contain any arguments.
+you have to be careful when overloading, errors can occur depending how you define the parameters.

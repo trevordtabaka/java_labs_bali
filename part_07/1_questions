@@ -28,3 +28,7 @@ You can take advantaeg of the polymorphism aspect where you have one interface b
 default methods
 
 10) How many interfaces can a single class implement?
+largest int...basically unlimited
+
+11)What is a default interface method?
+A method in an interface that does not HAVE to be implemented by classes implementing the interface

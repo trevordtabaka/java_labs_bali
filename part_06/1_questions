@@ -1,10 +1,13 @@
 1) What is Java inheritance?
 it is a pillar of java oop that allows you to make a hierarchical classification of objects
+
 2) How does inheritance work?
 It works by using the concept of parent classes and making sub classes of those called the child classes.
 The child classes can inhererit characteristics of the parent class
+
 3) What are some advantages that inheritance provides?
 You can create superclasses that define a general set of characteristics for a set of subclasses. Allows you to organize and reuse your code better
+
 4) What does the "super" keyword do?
 It declares that the object calling the following is a subclass of the it and you are using the superclasses member.
 

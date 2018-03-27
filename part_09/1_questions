@@ -63,4 +63,4 @@ converts it to character
 read returns bytes of data readLine() will return strings
 
 13) Demonstrate instantiating a BufferedReader that will read a file called "yucatan_cenotes.txt"
-BufferedReader buffRead = new BufferedReader(new InputStreamReader("yucatan_cenotes"));
+BufferedReader buffRead = new BufferedReader(new FileReader(new InputStreamReader("yucatan_cenotes")));
