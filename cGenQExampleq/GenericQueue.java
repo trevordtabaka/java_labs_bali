@@ -1,4 +1,4 @@
-package codingnomads.GenQExampleq;
+package cGenQExampleq;
 
 import codingnomads.exceptions.QueueEmptyException;
 import codingnomads.exceptions.QueueFullException;
