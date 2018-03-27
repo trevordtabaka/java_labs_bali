@@ -1,0 +1,15 @@
+Multithreading challenges:
+1) create 5 classes that each implement Runnable - each class should have a constructor that takes in a name and passes
+it to the Thread object along with "this" - ie:
+```thrd = new Thread(this, name);```
+before starting the Thread (in the constructor).
+
+2) create 5 classes that each extend Thread - each class should have a constructor that takes in a name and passes it to
+ the super constructor before starting the Thread (in the constructor)
+3) Finish the challenge I sent a few days ago:
+```/*
+    Write a multithreaded application that will do the following:
+    - Use four threads to read four individual files (ie, file1, file2, file3, file4) - each thread is responsible for
+        reading one file.
+    - Write the contents of all four files, in sequential order (1 -> 2 -> 3 -> 4) into file5.
+ */```
